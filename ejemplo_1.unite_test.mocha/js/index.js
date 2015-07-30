@@ -1,8 +1,3 @@
-if(typeof(module)==="undefined"){
-    module = {};
-    module.exports = {};
-}
-
 function ready(suscribeEvents) {
   if (document.readyState != 'loading'){
     suscribeEvents();
