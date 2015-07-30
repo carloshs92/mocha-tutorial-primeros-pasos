@@ -17,4 +17,6 @@ calculator = {
 }
 
 // Para poder importar el código y asi usarlo en nuestras pruebas
-module.exports = calculator
+if ( typeof module != 'undefined' && module.exports ) {
+	module.exports = calculator;
+}
