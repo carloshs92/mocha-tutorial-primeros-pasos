@@ -1,4 +1,4 @@
-calculator = {
+objCalculator = {
 	addNumber: function(a, b){
 		return a + b;
 	},
@@ -18,5 +18,5 @@ calculator = {
 
 // Para poder importar el código y asi usarlo en nuestras pruebas
 if ( typeof module != 'undefined' && module.exports ) {
-	module.exports = calculator;
+	module.exports = objCalculator;
 }
