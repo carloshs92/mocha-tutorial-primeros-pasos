@@ -16,21 +16,21 @@ suscribeEvents = function(){
 events = {
 	calculateNumber : function(){
 		var operator = this.getAttribute('operator');
-		var number_1 = document.getElementById('number_1').value;
-		var number_2 = document.getElementById('number_2').value;
+		var number_1 = parseInt(document.getElementById('number_1').value);
+		var number_2 = parseInt(document.getElementById('number_2').value);
 		var result = ''
 		switch(operator) {
 		    case 'add':
-		        result = calculator.addNumber(number_1, number_2)
+		        result = objCalculator.addNumber(number_1, number_2)
 		        break;
 		    case 'substract':
-		        result = calculator.substractNumber(number_1, number_2)
+		        result = objCalculator.substractNumber(number_1, number_2)
 		        break;
 		    case 'multiply':
-		        result = calculator.multiplyNumber(number_1, number_2)
+		        result = objCalculator.multiplyNumber(number_1, number_2)
 		        break;
 		    case 'divide':
-		        result = calculator.divideNumber(number_1, number_2)
+		        result = objCalculator.divideNumber(number_1, number_2)
 		        break;
 		}
 		document.getElementById('result').value = result;
