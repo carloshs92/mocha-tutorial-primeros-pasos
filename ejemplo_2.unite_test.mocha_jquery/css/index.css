@@ -1,0 +1,20 @@
+textarea{
+	display: block;
+	font-size: 18px;
+	height: 250px;
+	padding: 5px 10px;
+	resize: none;
+	width: 960px;
+}
+label{
+	float: right;
+	font-size: 22px;
+}
+.wrapper{
+	width: 960px;
+	margin: 100px auto;
+}
+.warning{
+	color: red;
+	font-weight: bold;
+}
