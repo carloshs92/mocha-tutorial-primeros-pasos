@@ -1,8 +1,7 @@
 objCounter = {
 
-	getCharactersLeft: function(mensaje){
+	getCharactersLeft: function(mensaje, limit){
 		var text = $.trim(mensaje.val());
-		var limit = mensaje.attr('maxlength')
 		var charactersLeft = limit - text.length;
 		if(charactersLeft<0){
 			charactersLeft = 0;
